@@ -5,7 +5,7 @@ import CustomSwitch from './src/components/CustomSwitch';
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Custom Cursor</Text>
+      <Text style={styles.text}>Custom Switch</Text>
       <View style={styles.switchContainer}>
         <CustomSwitch activeColor={'#FFA901'} inActiveColor={'#F2F5F7'} />
       </View>
