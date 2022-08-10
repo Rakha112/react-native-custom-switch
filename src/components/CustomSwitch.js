@@ -13,7 +13,7 @@ const Switch = ({activeColor, inActiveColor}) => {
   // value for Switch Animation
   const switchTranslate = useSharedValue(0);
   // state for activate Switch
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(false);
   // Progress Value
   const progress = useDerivedValue(() => {
     return withTiming(active ? 22 : 0);
@@ -92,5 +92,6 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.2,
     shadowRadius: 2.5,
+    elevation: 4,
   },
 });
